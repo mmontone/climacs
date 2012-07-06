@@ -180,6 +180,7 @@ Definition command was issued."
         (set-syntax view "Lisp")
         (insert-sequence (point) describe)))))
 
+#+hyperspec
 (define-command (com-hyperspec-lookup :name t :command-table climacs-lisp-table)
     ()
   "Lookup Hyperspec."
@@ -229,6 +230,7 @@ Definition command was issued."
          'climacs-lisp-table
          '((#\c :control) (#\d :control) (#\d)))
 
+#+hyperspec
 (set-key 'com-hyperspec-lookup
          'climacs-lisp-table
          '((#\c :control) (#\d :control) (#\h)))

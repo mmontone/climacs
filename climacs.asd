@@ -28,7 +28,8 @@
 (in-package :climacs.system)
 
 (defsystem :climacs
-  :depends-on (:mcclim :flexichain :hyperspec-lookup)
+  :depends-on (:mcclim :flexichain
+                       #+hyperspec :hyperspec-lookup)
   :components
   ((:file "packages")
    (:file "text-syntax" :depends-on ("packages"))
